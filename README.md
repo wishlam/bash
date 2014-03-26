@@ -1,4 +1,4 @@
 bash
 ====
 
-.bash files
+Some .bash configuration files I use. Mostly .bash_profile.
