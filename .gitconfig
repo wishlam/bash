@@ -1,0 +1,5 @@
+[user]
+	email = wish.lam@gmail.com
+
+[alias]
+  tree = git log --graph --oneline --all
