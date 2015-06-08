@@ -13,7 +13,9 @@ alias burpit='burp; firefoxp'
 HISTFILESIZE=4000
 
 source ~/.git-completion.bash
-source ~/.bashrc
+if [ -f ~/.bashrc ]; then
+     source ~/.bashrc
+fi
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
