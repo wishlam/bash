@@ -8,6 +8,7 @@ alias pp_json='python -mjson.tool'
 alias burp='nohup java -XX:MaxPermSize=1G -jar /Applications/burpsuite_free_v1.6.25.jar & exit'
 alias firefoxp='/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin -ProfileManager'
 alias burpit='burp; firefoxp'
+alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 
 HISTFILESIZE=4000
 
