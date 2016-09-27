@@ -2,24 +2,29 @@
 # General aliases and settings
 #################################
 
-source ~/.profile
+#source ~/.profile
 
 export EDITOR=vim
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
+
+##################
+# Questionable?
+##################
+
 alias pp_json='python -mjson.tool'
 alias burp='nohup java -XX:MaxPermSize=1G -jar /Applications/burpsuite_free_v1.6.32.jar & exit'
 alias firefoxp='/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin -ProfileManager'
-alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
+
 alias inventory='echo "/Users/wlam/repositories/iloan/deploy/bin/ec2.py"'
 
 HISTFILESIZE=5000
 
-source ~/.git-completion.bash
-if [ -f ~/.bashrc ]; then
-     source ~/.bashrc
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/wlam/.local/bin:$PATH"
