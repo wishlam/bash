@@ -2,6 +2,7 @@
 # General aliases and settings
 #################################
 
+source ~/.bashrc
 source /usr/local/Cellar/pyenv/1.0.2/completions/pyenv.bash
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/wlam/.local/bin:$PATH"
