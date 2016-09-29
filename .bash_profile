@@ -2,12 +2,12 @@
 # General aliases and settings
 #################################
 
-#source ~/.profile
+source /usr/local/Cellar/pyenv/1.0.2/completions/pyenv.bash
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/wlam/.local/bin:$PATH"
 export EDITOR=vim
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export PYENV_VERSION=2.7.12
 
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 
@@ -28,7 +28,6 @@ eval "$(hub alias -s)"
 alias pp_json='python -mjson.tool'
 alias burp='nohup java -XX:MaxPermSize=1G -jar /Applications/burpsuite_free_v1.6.32.jar & exit'
 alias firefoxp='/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin -ProfileManager'
-#alias inventory='echo "/Users/wlam/repositories/iloan/deploy/bin/ec2.py"'
 
 ##########
 # rbenv
