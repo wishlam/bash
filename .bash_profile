@@ -2,33 +2,45 @@
 # General aliases and settings
 #################################
 
-source ~/.profile
+source /usr/local/Cellar/pyenv/1.0.2/completions/pyenv.bash
 
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/wlam/.local/bin:$PATH"
 export EDITOR=vim
-
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export PYENV_VERSION=2.7.12
+
+alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
+
+HISTFILESIZE=5000
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+export JAVA_HOME="$(/usr/libexec/java_home)"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.4.0/libexec"
+eval "$(hub alias -s)"
+
+##################
+# Questionable?
+##################
 
 alias pp_json='python -mjson.tool'
 alias burp='nohup java -XX:MaxPermSize=1G -jar /Applications/burpsuite_free_v1.6.32.jar & exit'
 alias firefoxp='/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin -ProfileManager'
-alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
-alias inventory='echo "/Users/wlam/repositories/iloan/deploy/bin/ec2.py"'
 
-HISTFILESIZE=5000
-
-source ~/.git-completion.bash
-if [ -f ~/.bashrc ]; then
-     source ~/.bashrc
-fi
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/wlam/.local/bin:$PATH"
-export JAVA_HOME="$(/usr/libexec/java_home)"
-export RBENV_ROOT=/usr/local/var/rbenv
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.4.0/libexec"
+##########
+# rbenv
+##########
 
 eval "$(rbenv init -)"
-eval "$(hub alias -s)"
+export RBENV_ROOT=/usr/local/var/rbenv
+
+##########
+# Pyenv
+##########
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 ########
 # lulz
