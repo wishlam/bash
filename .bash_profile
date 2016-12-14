@@ -48,6 +48,7 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 ########
 
 export ANSIBLE_COW_SELECTION=daemon
+eval "$(thefuck --alias)"
 
 ###################################
 # tag-ag
