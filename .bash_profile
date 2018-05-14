@@ -4,10 +4,9 @@
 
 source ~/.bashrc
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/wlam/.local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.local/bin:$PATH"
 export EDITOR=vim
 export CLICOLOR=1
-#Use preloaded profiles for iTerm instead of the line below.
 
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 
@@ -18,7 +17,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.7.4.0/libexec"
+
+# https://hub.github.com/
 eval "$(hub alias -s)"
 
 alias pp_json='python -mjson.tool'
