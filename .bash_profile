@@ -25,6 +25,7 @@ alias pp_json='python -mjson.tool'
 alias burp='nohup java -XX:MaxPermSize=1G -jar /Applications/burpsuite_free_v1.6.32.jar & exit'
 alias firefoxp='/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin -ProfileManager'
 alias repo='cd /Users/wlam/repositories/'
+alias cat='bat'
 
 ########
 # lulz
