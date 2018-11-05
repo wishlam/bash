@@ -17,7 +17,10 @@ brew install jq
 brew install mtr
 brew install md5sha1sum
 brew install nmap
-brew install openssl #fuck the system version
+brew install openssl        #fuck the system version
+
+brew tap aykamko/tag-ag     #https://github.com/aykamko/tag
+brew install tag-ag         # see previous line
 
 # Dev tools
 brew install rbenv
