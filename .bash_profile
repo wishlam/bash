@@ -7,6 +7,7 @@ source ~/.bashrc
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.local/bin:$PATH"
 export EDITOR=vim
 export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 
@@ -26,6 +27,7 @@ alias burp='nohup java -XX:MaxPermSize=1G -jar /Applications/burpsuite_free_v1.6
 alias firefoxp='/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin -ProfileManager'
 alias repo='cd /Users/wlam/repositories/'
 alias cat='bat'
+alias tf='terraform'
 
 ########
 # lulz
