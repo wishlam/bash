@@ -32,6 +32,7 @@ alias cat='bat'
 ########
 
 export ANSIBLE_COW_SELECTION=daemon
+eval "$(thefuck --alias)"
 
 ###################################
 # tag-ag
