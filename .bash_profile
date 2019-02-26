@@ -16,7 +16,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-export JAVA_HOME="$(/usr/libexec/java_home)"
+#export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # https://hub.github.com/
 eval "$(hub alias -s)"
