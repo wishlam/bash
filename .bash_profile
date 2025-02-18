@@ -4,7 +4,7 @@
 
 source ~/.bashrc
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.local/bin:$PATH"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/Cellar:/usr/local/opt:/usr/local/bin:$HOME/.local/bin:$PATH"
 export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
@@ -28,6 +28,12 @@ alias firefoxp='/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox
 alias repo='cd /Users/wlam/repositories/'
 alias cat='bat'
 alias tf='terraform'
+
+##########
+# Homebrew
+#########
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ########
 # lulz
@@ -57,3 +63,9 @@ eval "$(rbenv init -)"
 ##########
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+#################################
+# Fix Apple's annoying zsh banner
+#################################
+
+export BASH_SILENCE_DEPRECATION_WARNING=1

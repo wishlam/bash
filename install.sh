@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ln -s $HOME/repositories/bash/.gitconfig .gitconfig
-ln -s $HOME/repositories/bash/.bash_profile .bash_profile
-ln -s $HOME/repositories/bash/.bashrc .bashrc
+ln -s $HOME/Repos/wishlam/bash/.gitconfig $HOME/.gitconfig
+ln -s $HOME/Repos/wishlam/bash/.bash_profile $HOME/.bash_profile
+ln -s $HOME/Repos/wishlam/bash/.bashrc $HOME/.bashrc
 
 
