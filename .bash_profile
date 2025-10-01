@@ -1,6 +1,6 @@
 ##########
 # Homebrew
-#########
+##########
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -24,9 +24,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 #export JAVA_HOME="$(/usr/libexec/java_home)"
-
-# https://hub.github.com/
-eval "$(hub alias -s)"
 
 alias pp_json='python -mjson.tool'
 alias burp='nohup java -XX:MaxPermSize=1G -jar /Applications/burpsuite_free_v1.6.32.jar & exit'
