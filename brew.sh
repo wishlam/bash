@@ -26,6 +26,7 @@ brew install tag-ag         # see previous line
 brew install rbenv
 brew install python3
 brew install python
+brew install gh
 
 # AWS or GTFO
 brew install ec2-api-tools
